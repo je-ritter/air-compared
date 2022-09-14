@@ -1,0 +1,87 @@
+
+
+
+
+body {
+  font-family: 'Bitter', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.125rem;
+  color: #101820;
+}
+
+section {
+  max-width: 60rem;
+  padding: 1.5rem 1.5rem 2rem;
+  border: 2px solid #a7a8aa;
+  border-radius: 0.5rem;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.chart-title {
+  margin: 0 0 2.5rem;
+}
+
+.chart-inner {
+  display: grid;
+  grid-template-columns: auto;
+  gap: .5em 0;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  grid-auto-columns: 1fr;
+}
+
+.chart-inner span {
+  font-weight: bold;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem
+}
+
+/* Chart Bars CSS for changing color, adding shadows, etc. */
+.chart-bars--good {
+  grid-column-start: 1;
+  background-color: #A4AAA8;
+  transition: background-color 1s;
+}
+
+.chart-bars--good:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #83B692;
+}
+
+.chart-bars--moderate {
+  grid-column-start: 1;
+  background-color: #9FA2A7;
+  transition: background-color 1s;
+}
+
+.chart-bars--moderate:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color:  #FFCC33;
+}
+
+.chart-bars--unhealthy {
+  grid-column-start: 1;
+  background-color: #D5AE9D;
+  transition: background-color 1s;
+}
+
+.chart-bars--unhealthy:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #C2452D;
+}
+
+
+
+
